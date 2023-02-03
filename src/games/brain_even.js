@@ -1,4 +1,4 @@
-import brainGameEven from '../index.js';
+import brainGame from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const ruleGames = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -13,7 +13,7 @@ const questionAndAnswer = () => {
 };
 
 const brainEven = () => {
-  brainGameEven(ruleGames, questionAndAnswer);
+  brainGame(ruleGames, questionAndAnswer);
 };
 
 export default brainEven;
