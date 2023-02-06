@@ -6,3 +6,5 @@
 [Game Brain-even: ](https://asciinema.org/a/qXrtz0Ii5vuq8y6jMOIvLb5Ww)
 
 [Game Brain-calc:](https://asciinema.org/a/XfKdVthcrmxKGmgDKftcOJBLX)
+
+[Game Brain-gcd:](https://asciinema.org/a/EqRBDFU0PNveRYcOprxk9dQIr)
