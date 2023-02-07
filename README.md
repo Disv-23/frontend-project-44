@@ -43,13 +43,10 @@
 >brain-even
 
 
->Welcome to the Brain Games!
-
->May I have your name? Sam
-
->Hello, Sam!
-
->Answer "yes" if the number is even, otherwise answer "no".
+    Welcome to the Brain Games!
+    May I have your name? Sam
+    Hello, Sam!
+    Answer "yes" if the number is even, otherwise answer "no".
 
 >Question: 15
 
