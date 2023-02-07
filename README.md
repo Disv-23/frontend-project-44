@@ -10,3 +10,5 @@
 [Game Brain-gcd:](https://asciinema.org/a/EqRBDFU0PNveRYcOprxk9dQIr)
 
 [Game Brain-progression](https://asciinema.org/a/jxY3wWMOS4xb18EOp4BIQX9P9)
+
+[Game Brain-prime](https://asciinema.org/a/cMUYoPxCpMRiIbnfeLRUwC5bm)
