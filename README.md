@@ -13,7 +13,47 @@
 * Определение наибольшего общего делителя.
 * Определение простого числа.
 
-[Game Brain-even: ](https://asciinema.org/a/qXrtz0Ii5vuq8y6jMOIvLb5Ww)
+## Игра: "Проверка на чётность"
+Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
+>Welcome to the Brain Games!
+>May I have your name? Bill
+>Hello, Bill!
+>Answer "yes" if the number is even, otherwise answer "no".
+>Question: 15
+>Your answer: yes
+
+В случае, если пользователь даст неверный ответ, необходимо завершить игру и вывести сообщение:
+>'yes' is wrong answer ;(. Correct answer was 'no'.
+>Let's try again, Bill!
+
+В случае, если пользователь ввел верный ответ, нужно отобразить:
+>Correct!
+
+и приступить к следующему числу.
+Пользователь должен дать правильный ответ на три вопроса подряд. После успешной игры нужно вывести:
+>Congratulations, Bill!
+
+Вывод должен получиться следующий:
+>brain-even
+
+>Welcome to the Brain Games!
+>May I have your name? Sam
+>Hello, Sam!
+>Answer "yes" if the number is even, otherwise answer "no".
+>Question: 15
+>Your answer: no
+>Correct!
+>Question: 6
+>Your answer: yes
+>Correct!
+>Question: 7
+>Your answer: no
+>Correct!
+>Congratulations, Sam!
+
+* Любой некорректный ввод считается ошибкой (например, n) и равносилен неправильному ответу.
+
+[Пример игры Game Brain-even: ](https://asciinema.org/a/qXrtz0Ii5vuq8y6jMOIvLb5Ww)
 
 [Game Brain-calc:](https://asciinema.org/a/XfKdVthcrmxKGmgDKftcOJBLX)
 
@@ -22,4 +62,3 @@
 [Game Brain-progression](https://asciinema.org/a/jxY3wWMOS4xb18EOp4BIQX9P9)
 
 [Game Brain-prime](https://asciinema.org/a/cMUYoPxCpMRiIbnfeLRUwC5bm)
-
