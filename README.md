@@ -16,7 +16,9 @@
 ## Игра: "Проверка на чётность"
 Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
 >Welcome to the Brain Games!
+
 >May I have your name? Bill
+
 >Hello, Bill!
 >Answer "yes" if the number is even, otherwise answer "no".
 >Question: 15
