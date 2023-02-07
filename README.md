@@ -8,3 +8,5 @@
 [Game Brain-calc:](https://asciinema.org/a/XfKdVthcrmxKGmgDKftcOJBLX)
 
 [Game Brain-gcd:](https://asciinema.org/a/EqRBDFU0PNveRYcOprxk9dQIr)
+
+[Game Brain-progression](https://asciinema.org/a/jxY3wWMOS4xb18EOp4BIQX9P9)
