@@ -73,7 +73,7 @@
 
 * Любой некорректный ввод считается ошибкой (например, n) и равносилен неправильному ответу.
 
-[![asciicast](https://asciinema.org/a/qXrtz0Ii5vuq8y6jMOIvLb5Ww.svg)](https://asciinema.org/a/qXrtz0Ii5vuq8y6jMOIvLb5Ww)
+[![asciicast](https://asciinema.org/a/scSotDEaML7VG4ZnrM2uAMA68.svg)](https://asciinema.org/a/scSotDEaML7VG4ZnrM2uAMA68)
 
 ## Игра: "Калькулятор"
 Необходимо реализовать игру "Калькулятор". Суть игры в следующем: пользователю показывается случайное математическое выражение, например 35 + 16, которое нужно вычислить и записать правильный ответ.
@@ -128,7 +128,7 @@
 
 На данном этапе можно заметить, что игры имеют общий порядок выполнения (задать вопрос, получить ответ, сравнить ответ и т.д.). Эту логику можно вынести в одно место и переиспользовать внутри конкретных игр для устранения дублирования кода.
 
-[Пример игры Game Brain-calc:](https://asciinema.org/a/XfKdVthcrmxKGmgDKftcOJBLX)
+[![asciicast](https://asciinema.org/a/oNf35daNertRq8rjSlIKVU6Ty.svg)](https://asciinema.org/a/oNf35daNertRq8rjSlIKVU6Ty)
 
 ## Игра "НОД"
 Необходимо реализовать игру "наибольший общий делитель (НОД)". Суть игры в следующем: пользователю показывается два случайных числа, например, 25 50. Пользователь должен вычислить и ввести наибольший общий делитель этих чисел.
@@ -177,7 +177,7 @@
 >Let's try again, Sam!
 
 
-[Пример игры Game Brain-gcd:](https://asciinema.org/a/EqRBDFU0PNveRYcOprxk9dQIr)
+[![asciicast](https://asciinema.org/a/aT5wfh875seplCOMJJeymB067.svg)](https://asciinema.org/a/aT5wfh875seplCOMJJeymB067)
 
 ## Игра "Арифметическая прогрессия"
 Показываем игроку ряд чисел, образующий арифметическую прогрессию, заменив любое из чисел двумя точками. Игрок должен определить это число.
@@ -228,7 +228,7 @@
 >Let's try again, Sam!
 
 
-[Пример игры Game Brain-progression](https://asciinema.org/a/jxY3wWMOS4xb18EOp4BIQX9P9)
+[![asciicast](https://asciinema.org/a/fypMNbV2fhDrbwa68S3fsWasG.svg)](https://asciinema.org/a/fypMNbV2fhDrbwa68S3fsWasG)
 
 ## Игра "Простое ли число?"
 Пример:
@@ -252,4 +252,4 @@
 
 Весь вывод и логика в случае правильного и неправильного ответа повторяют предыдущие шаги.
 
-[Пример игры Game Brain-prime](https://asciinema.org/a/cMUYoPxCpMRiIbnfeLRUwC5bm)
+[![asciicast](https://asciinema.org/a/hVVNlAqXT8yWhM1uUp6A2zDCf.svg)](https://asciinema.org/a/hVVNlAqXT8yWhM1uUp6A2zDCf)
