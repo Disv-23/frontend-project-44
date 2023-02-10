@@ -18,6 +18,11 @@
 
     node -v
     npm -v
+Для запуска игры у вас должен быть установлен Node.js v13.0.0 или выше. Они
+1. Склонируйте репозиторий проекта **git clone https://github.com/Disv-23/frontend-project-44.git**  
+2. Перейдите в каталог репозитория **cd frontend-project-44**
+3. Установите зависимости **make install**
+4. Установите пакет **make link**
 
 ## Игра: "Проверка на чётность"
 Необходимо реализовать игру "Проверка на чётность". Суть игры в следующем: пользователю показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное:
@@ -79,6 +84,9 @@
 
 * Любой некорректный ввод считается ошибкой (например, n) и равносилен неправильному ответу.
 
+### Как запустить игру:
+    $game-name
+
 [![asciicast](https://asciinema.org/a/scSotDEaML7VG4ZnrM2uAMA68.svg)](https://asciinema.org/a/scSotDEaML7VG4ZnrM2uAMA68)
 
 ## Игра: "Калькулятор"
@@ -134,6 +142,9 @@
 
 На данном этапе можно заметить, что игры имеют общий порядок выполнения (задать вопрос, получить ответ, сравнить ответ и т.д.). Эту логику можно вынести в одно место и переиспользовать внутри конкретных игр для устранения дублирования кода.
 
+### Как запустить игру:
+    $game-name
+
 [![asciicast](https://asciinema.org/a/oNf35daNertRq8rjSlIKVU6Ty.svg)](https://asciinema.org/a/oNf35daNertRq8rjSlIKVU6Ty)
 
 ## Игра "НОД"
@@ -182,6 +193,8 @@
 
 >Let's try again, Sam!
 
+### Как запустить игру:
+    $game-name
 
 [![asciicast](https://asciinema.org/a/aT5wfh875seplCOMJJeymB067.svg)](https://asciinema.org/a/aT5wfh875seplCOMJJeymB067)
 
@@ -233,6 +246,8 @@
 
 >Let's try again, Sam!
 
+### Как запустить игру:
+    $game-name
 
 [![asciicast](https://asciinema.org/a/fypMNbV2fhDrbwa68S3fsWasG.svg)](https://asciinema.org/a/fypMNbV2fhDrbwa68S3fsWasG)
 
@@ -257,5 +272,8 @@
 >Correct!
 
 Весь вывод и логика в случае правильного и неправильного ответа повторяют предыдущие шаги.
+
+### Как запустить игру:
+    $game-name
 
 [![asciicast](https://asciinema.org/a/hVVNlAqXT8yWhM1uUp6A2zDCf.svg)](https://asciinema.org/a/hVVNlAqXT8yWhM1uUp6A2zDCf)
