@@ -1,13 +1,15 @@
 import readlineSync from 'readline-sync';
 
-const brainGame = (ruleGames, questionAndAnswer) => {
+const getBrainGames = (ruleGame, callbackGeneration) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name?');
   console.log(`${'Hello'}, ${userName}!`);
-  console.log(ruleGames);
+  console.log(ruleGame);
 
-  for (let i = 0; i < 3; i += 1) {
-    const [question, correctAnswer] = questionAndAnswer();
+  const numberOfRounds = 3;
+
+  for (let i = 0; i < numberOfRounds; i += 1) {
+    const [question, correctAnswer] = callbackGeneration();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
@@ -21,4 +23,4 @@ const brainGame = (ruleGames, questionAndAnswer) => {
   }
   console.log(`Congratulations, ${userName}!`);
 };
-export default brainGame;
+export default getBrainGames;

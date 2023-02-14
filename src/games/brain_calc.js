@@ -1,17 +1,16 @@
-import brainGame from '../index.js';
+import getBrainGames from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const ruleGames = 'What is the result of the expression?';
-const operatSymbol = ['+', '-', '*'];
+const ruleGame = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-const randomOperat = (arr) => {
-  const operatRandom = Math.floor(Math.random() * operatSymbol.length);
-  const operat = arr[operatRandom];
-  return operat;
+const getRandomOperator = (arr) => {
+  const operatorIndex = Math.floor(Math.random() * operators.length);
+  return arr[operatorIndex];
 };
 
-const operatCalculate = (symbol, value1, value2) => {
-  switch (symbol) {
+const calculate = (operator, value1, value2) => {
+  switch (operator) {
     case '+':
       return value1 + value2;
     case '-':
@@ -19,23 +18,20 @@ const operatCalculate = (symbol, value1, value2) => {
     case '*':
       return value1 * value2;
     default:
-      return 0;
+      throw new Error(`Unknown order state: '${operator.value1.value2}'!`);
   }
 };
 
-const questionAndAnswer = () => {
-  const randomSymbol = randomOperat(operatSymbol);
-  const firstNumber = getRandomNumber(0, 100);
-  const secondNumber = getRandomNumber(0, 100);
+const callbackGeneration = () => {
+  const randomSymbol = getRandomOperator(operators);
+  const firstNumber = getRandomNumber(1, 100);
+  const secondNumber = getRandomNumber(1, 100);
 
   const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
-  const correctAnswer = String(operatCalculate(randomSymbol, firstNumber, secondNumber));
+  const correctAnswer = String(calculate(randomSymbol, firstNumber, secondNumber));
 
   return [question, correctAnswer];
 };
 
-const brainGamesCalc = () => {
-  brainGame(ruleGames, questionAndAnswer);
-};
-
-export default brainGamesCalc;
+const getCalcGame = () => getBrainGames(ruleGame, callbackGeneration);
+export default getCalcGame;

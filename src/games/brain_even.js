@@ -1,19 +1,16 @@
-import brainGame from '../index.js';
+import getBrainGames from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const ruleGames = 'Answer "yes" if the number is even, otherwise answer "no".';
+const ruleGame = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (num) => num % 2 === 0;
 
-const questionAndAnswer = () => {
-  const numberRandom = getRandomNumber(0, 100);
+const callbackGeneration = () => {
+  const numberRandom = getRandomNumber(1, 100);
   const question = `${numberRandom}`;
   const correctAnswer = isEven(numberRandom) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
 
-const brainEven = () => {
-  brainGame(ruleGames, questionAndAnswer);
-};
-
-export default brainEven;
+const checkEven = () => getBrainGames(ruleGame, callbackGeneration);
+export default checkEven;

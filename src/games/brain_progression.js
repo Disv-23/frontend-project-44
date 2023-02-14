@@ -1,9 +1,9 @@
-import brainGame from '../index.js';
+import getBrainGames from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const ruleGames = 'What number is missing in the progression?';
+const ruleGame = 'What number is missing in the progression?';
 
-const progression = (startNumber, step) => {
+const hasProgression = (startNumber, step) => {
   const array = [];
   for (let i = 0; i <= 10; i += 1) {
     array.push(startNumber + step * i);
@@ -11,10 +11,10 @@ const progression = (startNumber, step) => {
   return array;
 };
 
-const progres = () => {
+const callbackGeneration = () => {
   const startNumber = getRandomNumber(0, 50);
   const step = getRandomNumber(3, 5);
-  const array = progression(startNumber, step);
+  const array = hasProgression(startNumber, step);
   const indexRandom = getRandomNumber(0, 10);
   const correctAnswer = String(array[indexRandom]);
   array[indexRandom] = '..';
@@ -23,8 +23,5 @@ const progres = () => {
   return [question, correctAnswer];
 };
 
-const brainProgress = () => {
-  brainGame(ruleGames, progres);
-};
-
-export default brainProgress;
+const getProgressionGame = () => getBrainGames(ruleGame, callbackGeneration);
+export default getProgressionGame;
