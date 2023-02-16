@@ -1,4 +1,4 @@
-import startGames from '../index.js';
+import startGame from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const ruleGame = 'What is the result of the expression?';
@@ -24,8 +24,8 @@ const calculate = (operator, value1, value2) => {
 
 const generateRoundData = () => {
   const randomSymbol = getRandomOperator(operators);
-  const firstNumber = getRandomNumber(1, 100);
-  const secondNumber = getRandomNumber(1, 100);
+  const firstNumber = getRandomNumber(1, 50);
+  const secondNumber = getRandomNumber(1, 50);
 
   const question = `${firstNumber} ${randomSymbol} ${secondNumber}`;
   const correctAnswer = String(calculate(randomSymbol, firstNumber, secondNumber));
@@ -33,5 +33,5 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const startCalcGame = () => startGames(ruleGame, generateRoundData);
+const startCalcGame = () => startGame(ruleGame, generateRoundData);
 export default startCalcGame;
