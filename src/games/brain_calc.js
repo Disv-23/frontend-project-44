@@ -1,4 +1,4 @@
-import getBrainGames from '../index.js';
+import startGames from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const ruleGame = 'What is the result of the expression?';
@@ -22,7 +22,7 @@ const calculate = (operator, value1, value2) => {
   }
 };
 
-const callbackGeneration = () => {
+const generateRoundData = () => {
   const randomSymbol = getRandomOperator(operators);
   const firstNumber = getRandomNumber(1, 100);
   const secondNumber = getRandomNumber(1, 100);
@@ -33,5 +33,5 @@ const callbackGeneration = () => {
   return [question, correctAnswer];
 };
 
-const getCalcGame = () => getBrainGames(ruleGame, callbackGeneration);
-export default getCalcGame;
+const startCalcGame = () => startGames(ruleGame, generateRoundData);
+export default startCalcGame;

@@ -1,4 +1,4 @@
-import getBrainGames from '../index.js';
+import startGames from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
 const ruleGame = 'Find the greatest common divisor of given numbers.';
@@ -12,7 +12,7 @@ const nod = (x, y) => {
   return nod(y, x % y);
 };
 
-const callbackGeneration = () => {
+const generateRoundData = () => {
   const firsNumber = getRandomNumber(0, 50);
   const secondNumber = getRandomNumber(0, 50);
   const question = `${firsNumber} ${secondNumber}`;
@@ -20,5 +20,5 @@ const callbackGeneration = () => {
   return [question, correctAnswer];
 };
 
-const getGcdGame = () => getBrainGames(ruleGame, callbackGeneration);
-export default getGcdGame;
+const startGcdGame = () => startGames(ruleGame, generateRoundData);
+export default startGcdGame;
