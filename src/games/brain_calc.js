@@ -4,9 +4,9 @@ import getRandomNumber from '../randomNumber.js';
 const gameRule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
-const getRandomOperator = (arr) => {
-  const operatorIndex = Math.floor(Math.random() * arr.length);
-  return arr[operatorIndex];
+const getRandomOperator = (arrOperators) => {
+  const operatorIndex = Math.floor(Math.random() * arrOperators.length);
+  return arrOperators[operatorIndex];
 };
 
 const calculate = (operator, value1, value2) => {
