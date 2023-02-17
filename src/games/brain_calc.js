@@ -1,11 +1,11 @@
 import startGame from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const ruleGame = 'What is the result of the expression?';
+const gameRule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const getRandomOperator = (arr) => {
-  const operatorIndex = Math.floor(Math.random() * operators.length);
+  const operatorIndex = Math.floor(Math.random() * arr.length);
   return arr[operatorIndex];
 };
 
@@ -33,5 +33,5 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const startCalcGame = () => startGame(ruleGame, generateRoundData);
+const startCalcGame = () => startGame(gameRule, generateRoundData);
 export default startCalcGame;

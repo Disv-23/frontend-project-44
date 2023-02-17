@@ -1,11 +1,12 @@
 import startGame from '../index.js';
 import getRandomNumber from '../randomNumber.js';
 
-const ruleGame = 'What number is missing in the progression?';
+const gameRule = 'What number is missing in the progression?';
+const progressionLength = 10;
 
 const getProgression = (startNumber, step) => {
   const array = [];
-  for (let i = 0; i <= 10; i += 1) {
+  for (let i = 0; i <= progressionLength; i += 1) {
     array.push(startNumber + step * i);
   }
   return array;
@@ -23,5 +24,5 @@ const generateRoundData = () => {
   return [question, correctAnswer];
 };
 
-const startProgressionGame = () => startGame(ruleGame, generateRoundData);
+const startProgressionGame = () => startGame(gameRule, generateRoundData);
 export default startProgressionGame;
